@@ -12,9 +12,9 @@ driver = webdriver.Chrome (PATH)
 
 print ('opening webpage ... ')
 
-driver.get ('https://www.nike.com/in/t/zion-1-pf-basketball-shoe-bHGvxg/DA3129-001')
+driver.get ('https://www.nike.com/launch/t/dunk-high-wu-tang-clan')
 
-# wait 10 seconds for page to load
+# wait 7 seconds for page to load
 time.sleep (10)
 
 print ("Searching for Size selector ... ")
@@ -25,7 +25,7 @@ shoeSize[4].click ()
 addToBag = driver.find_element_by_class_name ("add-to-cart-btn")
 addToBag.click ()
 
-# wait 5 seconds after clicking the button
+# wait 3 seconds after clicking the button
 time.sleep (5)
 
 driver.get ('https://www.nike.com/cart')
